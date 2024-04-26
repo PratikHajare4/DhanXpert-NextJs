@@ -1,32 +1,34 @@
-import React from 'react';
+// import React from 'react';
 
-// Define the array of banner images outside of the component function
-const slides = [
-  { image: '/vault.jpeg', alt: 'Banner 1' },
-  // { image: '/33634617_8084191.jpg', alt: 'Banner 2' },
-  // { image: '/33634617_8084191.jpg', alt: 'Banner 3' },
-];
+// const Slideshow = () => {
+//   return (
+//     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+//       <ol className="carousel-indicators">
+//         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+//         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+//         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+//       </ol>
+//       <div className="carousel-inner">
+//         <div className="carousel-item active">
+//           <img className="d-block w-100" src="..." alt="First slide" />
+//         </div>
+//         <div className="carousel-item">
+//           <img className="d-block w-100" src="..." alt="Second slide" />
+//         </div>
+//         <div className="carousel-item">
+//           <img className="d-block w-100" src="..." alt="Third slide" />
+//         </div>
+//       </div>
+//       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+//         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+//         <span className="sr-only">Previous</span>
+//       </a>
+//       <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+//         <span className="carousel-control-next-icon" aria-hidden="true"></span>
+//         <span className="sr-only">Next</span>
+//       </a>
+//     </div>
+//   );
+// }
 
-// Export the slides array separately
-export { slides };
-
-// Export the Slideshow component function directly as default
-export default function Slideshow() {
-  return (
-    <div className="slideshow-container">
-      {slides.map((slide, index) => (
-        <div key={index} className={`slide ${index === 0 ? 'active' : ''}`}>
-          <img src={slide.image} alt={slide.alt}  style={{ width: '900px', height: '500px' }}/>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-
-
-
-
-
-
-
+// export default Slideshow;

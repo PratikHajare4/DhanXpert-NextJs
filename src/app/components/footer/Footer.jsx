@@ -1,14 +1,18 @@
 import React from 'react';
 
+// Author: Rohit Shitole
+
 export default function Footer () {
     return (
         <footer className="text-white" style={{ backgroundColor: '#343F5A' }}>
             <div className="container mx-auto px-6 pt-10 pb-6">
                 <div className="flex flex-wrap">
+                    {/* Company Information  */}
                     <div className="w-full md:w-1/4 text-white mb-6 md:mb-0">
                         <h2 className="text-3xl font-bold">DhanXperts</h2>
                         <p className="mt-5 font-semibold">DhanXpert is a cutting-edge online platform that revolutionizes <br />the way individuals and businesses connect with trusted financial DhanXperts.</p>
                     </div>
+                    {/* Quick Links  */}
                     <div className="w-1/2 md:w-1/4 mb-6 md:mb-0 link-column">
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul>
@@ -21,6 +25,7 @@ export default function Footer () {
                             <li><a href="/privacy" className="hover:text-black font-semibold">Privacy Policy</a></li>
                         </ul>
                     </div>
+                    {/* Products  */}
                     <div className="w-1/2 md:w-1/4 mb-6 md:mb-0 link-column">
                         <h3 className="text-lg font-semibold mb-4">Products</h3>
                         <ul>
@@ -30,9 +35,11 @@ export default function Footer () {
                             <li><a href="/tax-consultancy" className="hover:text-black font-semibold ">Tax Consultancy</a></li>
                         </ul>
                     </div>
+                    {/* Connect With Us  */}
                     <div className="w-full md:w-1/4 mb-6 md:mb-0">
                         <h3 className="text-xl font-semibold mb-4 flex justify-center ">Connect With Us</h3>
                         <div className="flex justify-center md:justify-end -mx-1">
+                            {/* Social Media Icons */}
                             <a href="#" className="mx-2.5 flex items-center justify-center text-blue-600 hover:text-blue-700 text-xl w-12 h-12 rounded-full bg-white"><i className="fab fa-facebook-f"></i></a>
                             <a href="#" className="mx-2.5 flex items-center justify-center text-pink-600 hover:text-pink-700 text-xl w-12 h-12 rounded-full bg-white"><i className="fab fa-instagram"></i></a>
                             <a href="#" className="mx-2.5 flex items-center justify-center text-blue-400 hover:text-blue-500 text-xl w-12 h-12 rounded-full bg-white"><i className="fab fa-twitter"></i></a>
@@ -41,10 +48,10 @@ export default function Footer () {
                     </div>
                 </div>
             </div>
+            {/* Bottom Bar Section  */}
             <div className="bottom-bar py-4 text-center text-sm">
                 &copy; {new Date().getFullYear()} Powered by DhanXpert.
             </div>
         </footer>
     );
 }
-

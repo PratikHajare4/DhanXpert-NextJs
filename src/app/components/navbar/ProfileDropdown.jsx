@@ -35,19 +35,33 @@ const ProfileDropdown = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="absolute right-0 mt-2 w-25 mr-2 bg-white rounded-lg shadow-lg z-10">
+        <div className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg ">
           <ul className="py-2">
+          <li>
+              <Link href="/pages/register">
+                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                  My Profile
+                </button>
+              </Link>
+            </li>
             <li className=''>
               <Link href="/pages/login">
-                <button onClick={toggleDropdown} className="block px-4 py-2 w-30 text-gray-800 hover:bg-gray-200 hover:w-30">
+                <button onClick={toggleDropdown} className="block px-4 py-2  text-gray-800 hover:bg-gray-200 ">
                   Login  
                 </button>
               </Link>
             </li>
             <li>
               <Link href="/pages/register">
-                <button onClick={toggleDropdown} className="block px-4 w-30 py-2 text-gray-800 hover:bg-gray-200">
+                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                   Register
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link href="/pages/register">
+                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                  Settings
                 </button>
               </Link>
             </li>
