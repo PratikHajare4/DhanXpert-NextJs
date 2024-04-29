@@ -22,9 +22,9 @@ export default function Search() {
   };
 
   return (
-    <div className='flex ml-10 justify-left mt-10'>
+    <div className='bg-white rounded-2xl text-sm   mb-10 flex md:ml-10 justify-left mt-10 '>
       
-        <div className="flex flex-row items-center justify-center gap-2 border border-gray-600  rounded-2xl ">
+        <div className="flex flex-row   items-center justify-center gap-2 border border-gray-600  rounded-2xl ">
       <div className='p-2' >
         <label>Location:</label>
         <select
@@ -55,7 +55,7 @@ export default function Search() {
       
     <div className="flex flex-row items-center justify-center">
    
-      <button className='p-2 text-white bg-blue-500 h-[50px] rounded-2xl   flex flex-row items-center justify-center ml-2' onClick={handleSearch}><IoSearchOutline className='text-xl' /> <p className='ml-3 mr-3'>Find Expert </p></button>
+      <button className='p-2 text-white  bg-blue-500 h-full rounded-2xl   flex flex-row items-center justify-center ml-2' onClick={handleSearch}><IoSearchOutline className='text-xl' /> <p className='ml-3 mr-3'>Find Expert </p></button>
      
       </div>
      

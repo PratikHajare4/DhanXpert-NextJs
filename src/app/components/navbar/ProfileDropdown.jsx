@@ -35,32 +35,32 @@ const ProfileDropdown = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg ">
-          <ul className="py-2">
+        <div className="absolute z-10 text-base overflow-hidden w-40 mt-2 md:mr-5 bg-white rounded-lg shadow-lg ">
+          <ul className="">
           <li>
-              <Link href="/pages/register">
-                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+              <Link href="#">
+                <button onClick={toggleDropdown} className="block px-2 py-2 text-gray-800 hover:font-bold  hover:bg-gray-200">
                   My Profile
                 </button>
               </Link>
             </li>
             <li className=''>
               <Link href="/pages/login">
-                <button onClick={toggleDropdown} className="block px-4 py-2  text-gray-800 hover:bg-gray-200 ">
+                <button onClick={toggleDropdown} className="block px-2 py-2  text-gray-800 hover:font-bold  hover:bg-gray-200 ">
                   Login  
                 </button>
               </Link>
             </li>
             <li>
               <Link href="/pages/register">
-                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <button onClick={toggleDropdown} className="block px-2 py-2 text-gray-800 hover:font-bold hover:bg-gray-200">
                   Register
                 </button>
               </Link>
             </li>
             <li>
-              <Link href="/pages/register">
-                <button onClick={toggleDropdown} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+              <Link href="#">
+                <button onClick={toggleDropdown} className="block px-2 py-2 text-gray-800 hover:font-bold  hover:bg-gray-200">
                   Settings
                 </button>
               </Link>
